@@ -15,7 +15,5 @@ class IdeaController extends Controller
         $weird = $request->weird;
         $age = $request->age;
 
-
-
     }
 }
