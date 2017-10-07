@@ -25,6 +25,18 @@
     <!-- Theme CSS -->
     <link id="theme" rel="stylesheet" href={{asset("assets/css/theme.css")}}>
     <script src={{asset("assets/vendor/modernizr.js")}}></script>
+
+    <script>
+        function checkInp()
+        {
+            var x=document.forms["my-form"]["age"].value;
+            if (isNaN(x))
+            {
+                alert("Your age must be a number buddy >:(");
+                return false;
+            }
+        }
+    </script>
 </head>
 
 <body class="indexing">
@@ -139,7 +151,8 @@
             </div>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <form class="contact-form" method="post" action="contact.php">
+                    <form class="my-form" name= "my-form" action="/submit" onsubmit="checkInp()" method="post">
+                        {{ csrf_field() }}
                         <div class="input-field col-sm-12">
                             <div class="form-group">
                                 <input id="form-name" name="name" type="text" placeholder="Your Name *" required="required"
@@ -151,24 +164,24 @@
                         <div class="input-field col-sm-6">
                             <h4>What's your Gender?</h4>
                             <div class="form-group">
-                                <input name="gender" type="radio" value="0" ><span class="radio-buttons">Male</span>
-                                <input name="gender" type="radio" value="1" ><span class="radio-buttons">Female</span>
-                                <input name="gender" type="radio" value="2" ><span class="radio-buttons">Other</span>
+                                <input name="gender" type="radio" value="0" required><span class="radio-buttons">Male</span>
+                                <input name="gender" type="radio" value="1"><span class="radio-buttons">Female</span>
+                                <input name="gender" type="radio" value="2"><span class="radio-buttons">Other</span>
                             </div>
                         </div>
 
                         <div class="input-field col-sm-6">
                             <h4>Are you hungry?</h4>
                             <div class="form-group">
-                                <input name="hungry" type="radio" value="0" ><span class="radio-buttons">Hell Yeah</span>
-                                <input name="hungry" type="radio" value="1" ><span class="radio-buttons">Not Really</span>
+                                <input name="hungry" type="radio" value="0" required><span class="radio-buttons">Hell Yeah</span>
+                                <input name="hungry" type="radio" value="1"><span class="radio-buttons">Not Really</span>
                             </div>
                         </div>
 
                         <div class="input-field col-sm-6">
                             <h4>Got any kids?</h4>
                             <div class="form-group">
-                                <input name="kids" type="radio" value="0" ><span class="radio-buttons">Yeah <i class="ion-sad-outline"></i></span>
+                                <input name="kids" type="radio" value="0" required><span class="radio-buttons">Yeah <i class="ion-sad-outline"></i></span>
                                 <input name="kids" type="radio" value="1" ><span class="radio-buttons">Nope <i class="ion-happy-outline"></i></span>
                             </div>
                         </div>
@@ -176,7 +189,7 @@
                         <div class="input-field col-sm-6">
                             <h4>Be Honest, Are you stupid?</h4>
                             <div class="form-group">
-                                <input name="stupid" type="radio" value="0" ><span class="radio-buttons">Yeah <i class="ion-sad-outline"></i></span>
+                                <input name="stupid" type="radio" value="0" required><span class="radio-buttons">Yeah <i class="ion-sad-outline"></i></span>
                                 <input name="stupid" type="radio" value="1" ><span class="radio-buttons">Nope <i class="ion-happy-outline"></i></span>
                             </div>
                         </div>
@@ -185,7 +198,7 @@
                         <div class="input-field col-sm-6">
                             <h4>How weird are you?</h4>
                             <div class="form-group">
-                                <input name="weird" type="radio" value="0" ><span class="radio-buttons">Not</span>
+                                <input name="weird" type="radio" value="0" required><span class="radio-buttons">Not</span>
                                 <input name="weird" type="radio" value="1" ><span class="radio-buttons">Kinda</span>
                                 <input name="weird" type="radio" value="2" ><span class="radio-buttons">Weird Af</span>
                             </div>
@@ -200,8 +213,7 @@
 
 
                         <div class="col-sm-12 center">
-                            <input type="submit" value="Submit Form">
-                            <div class="messages"></div>
+                            <input type="submit">
                         </div>
                     </form>
                 </div>
@@ -211,6 +223,7 @@
 
 </div>
 <!-- end of web-in -->
+
 <script src={{asset("assets/vendor/jquery-2.2.1.min.js")}}></script>
 <script src={{asset("assets/vendor/matchHeight-min.js")}}></script>
 <script src={{asset("assets/vendor/contact/validator.js")}}></script>

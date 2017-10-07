@@ -15,3 +15,9 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::post('/submit', 'IdeaController@generate_idea');
+
+
+
+
+
