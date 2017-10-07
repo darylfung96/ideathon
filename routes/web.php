@@ -15,14 +15,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-<<<<<<< HEAD
-Route::post('/submit', 'IdeaController@generate_idea');
 
-
-
-
-
-=======
 Route::get('/train', 'IdeaController@trainDataSet');
 Route::post('/submit', 'IdeaController@generate_idea');
->>>>>>> daryl
+

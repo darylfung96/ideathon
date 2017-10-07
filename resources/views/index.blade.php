@@ -200,8 +200,7 @@
                             <div class="form-group">
                                 <input name="kids" type="radio" value="0" required><span class="radio-buttons">Yeah <i class="ion-sad-outline"></i></span>
                                 <input name="kids" type="radio" value="1" ><span class="radio-buttons">Nope <i class="ion-happy-outline"></i></span>
-<<<<<<< HEAD
-=======
+
                             </div>
                         </div>
 
@@ -221,33 +220,13 @@
                                 <input name="weird" type="radio" value="0" required><span class="radio-buttons">Not</span>
                                 <input name="weird" type="radio" value="1" ><span class="radio-buttons">Kinda</span>
                                 <input name="weird" type="radio" value="2" ><span class="radio-buttons">Weird Af</span>
->>>>>>> daryl
-                            </div>
-                        </div>
 
-                        <div class="input-field col-sm-6">
-<<<<<<< HEAD
-                            <h4>Be Honest, Are you stupid?</h4>
-                            <div class="form-group">
-                                <input name="stupid" type="radio" value="0" required><span class="radio-buttons">Yeah <i class="ion-sad-outline"></i></span>
-                                <input name="stupid" type="radio" value="1" ><span class="radio-buttons">Nope <i class="ion-happy-outline"></i></span>
                             </div>
-
                         </div>
 
 
                         <div class="input-field col-sm-6">
-                            <h4>How weird are you?</h4>
-                            <div class="form-group">
-                                <input name="weird" type="radio" value="0" required><span class="radio-buttons">Not</span>
-                                <input name="weird" type="radio" value="1" ><span class="radio-buttons">Kinda</span>
-                                <input name="weird" type="radio" value="2" ><span class="radio-buttons">Weird Af</span>
-                            </div>
-                        </div>
 
-                        <div class="input-field col-sm-6">
-=======
->>>>>>> daryl
                             <h4>How old are you?</h4>
                             <div class="form-group">
                                 <input name="age" type="text" placeholder="Bet you're old af" required="required">
