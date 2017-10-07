@@ -128,6 +128,54 @@
             </div>
         </div>
     </section>
+    <section id="c_contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 title">
+                    <h2>Tell us a little bit about yourself</h2>
+                    <h4>We want to get to know you inorder to give you the best possible idea :)</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <form class="contact-form" method="post" action="contact.php">
+                        <div class="input-field col-sm-12">
+                            <div class="form-group">
+                                <input id="form-name" name="name" type="text" placeholder="Your Name *" required="required"
+                                       data-error="Name is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="input-field col-sm-6">
+                            <div class="form-group">
+                                <input id="form-email" name="email" type="email" placeholder="Email Address *" required="required"
+                                       data-error="Email is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="input-field col-sm-6">
+                            <div class="form-group">
+                                <input id="form-tel" name="tel" type="tel" placeholder="Phone Number" data-error="Please provide real phone number.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="input-field col-sm-12">
+                            <div class="form-group">
+                                    <textarea id="form-textarea" name="Message" id="" cols="30" rows="5" placeholder="Your message here *"
+                                              required="required" data-error="Message is required."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 center">
+                            <input type="submit" value="Submit Form">
+                            <div class="messages"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <footer id="smart">
         <div class="container">
