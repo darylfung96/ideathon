@@ -94,6 +94,19 @@ $secondary: #224B7D; // Secondary for text hovers
 $shader: rgba(13, 20, 34, 0.9); // Used for shading on top of images and elements
 $navBg: rgba(13, 20, 34, 0.95); // Used for shading on top of images and elements
 ------------------------------------*/
+
+
+/* ----------------------------------
+   1. FORM STYLES
+---------------------------------- */
+
+.radio-buttons{
+    font: 300 15px/15px "Poppins", sans-serif;
+    margin-left: 5px;
+    margin-right: 15px;
+}
+
+
 /* ----------------------------------
    1. G L O B A L
 ---------------------------------- */

@@ -72,9 +72,9 @@
                 <h5>Welcome to Ideathon</h5>
                 <h1>Hackathon Idea Generator</h1>
                 <h6></h6>
-                <p>Try it out :D</p>
+                <p>Try it out <i class="ion-happy-outline"></i></p>
             </div>
-            <img class="arrow" src="img/arrow.svg" alt="">
+            <img class="arrow" src={{asset("assets/img/arrow.svg")}} alt="">
         </div>
     </header>
 
@@ -91,13 +91,13 @@
                 <div class="col-sm-3 col-xs-6 right mh">
                     <div class="aligner">
                         <div class="holder">
-                            <i class="ion-gear-a"></i>
+                            <i class="ion-happy"></i>
                             <h5>Normal</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing
                                 elit.
                             </p>
                             <hr>
-                            <i class="ion-alert"></i>
+                            <i class="ion-sad"></i>
                             <h5>Kinda Normal</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing
                                 elit.
@@ -128,12 +128,13 @@
             </div>
         </div>
     </section>
+
     <section id="c_contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 title">
                     <h2>Tell us a little bit about yourself</h2>
-                    <h4>We want to get to know you inorder to give you the best possible idea :)</h4>
+                    <h4>We want to get to know you inorder to give you the best possible idea <i class="ion-happy-outline"></i></h4>
                 </div>
             </div>
             <div class="row">
@@ -146,26 +147,45 @@
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
+
+                        <hr>
+
                         <div class="input-field col-sm-6">
+                            <h4>What's your Gender?</h4>
                             <div class="form-group">
-                                <input id="form-email" name="email" type="email" placeholder="Email Address *" required="required"
-                                       data-error="Email is required.">
-                                <div class="help-block with-errors"></div>
+                                <input name="gender" type="radio" value="Male" ><span class="radio-buttons">Male</span>
+                                <input name="gender" type="radio" value="Female" ><span class="radio-buttons">Female</span>
+                                <input name="gender" type="radio" value="Other" ><span class="radio-buttons">Other</span>
                             </div>
                         </div>
+
                         <div class="input-field col-sm-6">
+                            <h4>Got any kids?</h4>
                             <div class="form-group">
-                                <input id="form-tel" name="tel" type="tel" placeholder="Phone Number" data-error="Please provide real phone number.">
-                                <div class="help-block with-errors"></div>
+                                <input name="kids" type="radio" value="Yes" ><span class="radio-buttons">Yeah <i class="ion-sad-outline"></i></span>
+                                <input name="kids" type="radio" value="No" ><span class="radio-buttons">Nope <i class="ion-happy-outline"></i></span>
                             </div>
                         </div>
-                        <div class="input-field col-sm-12">
+
+
+                        <div class="input-field col-sm-6">
+                            <h4>Got any kids?</h4>
                             <div class="form-group">
-                                    <textarea id="form-textarea" name="Message" id="" cols="30" rows="5" placeholder="Your message here *"
-                                              required="required" data-error="Message is required."></textarea>
-                                <div class="help-block with-errors"></div>
+                                <input name="gender" type="radio" value="Male" ><span class="radio-buttons">Male</span>
+                                <input name="gender" type="radio" value="Female" ><span class="radio-buttons">Female</span>
+                                <input name="gender" type="radio" value="Other" ><span class="radio-buttons">Other</span>
                             </div>
                         </div>
+
+                        <div class="input-field col-sm-6">
+                            <h4>Are you hungry?</h4>
+                            <div class="form-group">
+                                <input name="hungry" type="radio" value="Yes" ><span class="radio-buttons">Hell Yeah</span>
+                                <input name="hungry" type="radio" value="No" ><span class="radio-buttons">Not Really</span>
+                            </div>
+                        </div>
+
+
                         <div class="col-sm-12 center">
                             <input type="submit" value="Submit Form">
                             <div class="messages"></div>
@@ -175,34 +195,6 @@
             </div>
         </div>
     </section>
-
-
-    <footer id="smart">
-        <div class="container">
-            <div class="row foot-space">
-                <div class="col-md-4 col-sm-12">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Odio, consequatur facere molestiae iusto atque.
-                    </p>
-                    <div class="social">
-                        <a href="#"><i class="ion-social-twitter"></i></a>
-                        <a href="#"><i class="ion-social-googleplus"></i></a>
-                        <a href="#"><i class="ion-social-instagram-outline"></i></a>
-                        <a href="#"><i class="ion-social-linkedin-outline"></i></a>
-                        <a href="#"><i class="ion-social-pinterest-outline"></i></a>
-                        <a href="#"><i class="ion-social-github"></i></a>
-                    </div>
-                </div>
-                <div class="col-xs-12">
-                    <hr>
-                </div>
-                <div class="col-xs-12 xs-center">
-                    <p class="footer-text">Copyright &copy; Ideathon. All rights reservered.</p>
-
-                </div>
-            </div>
-        </div>
-    </footer>
 
 </div>
 <!-- end of web-in -->
