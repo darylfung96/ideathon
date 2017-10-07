@@ -16,6 +16,4 @@ Route::get('/', function () {
 });
 
 
-Route::get('/testing', function () {
-    return view('testing/testing');
-});
+Route::get('/testing', 'IdeaController@getDataSet');

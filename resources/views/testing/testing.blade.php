@@ -1,6 +1,12 @@
 @php
 
-$testnumber = random_int(0, 1);
-echo $testnumber;
+echo "hello";
 
 @endphp
+
+
+{{--<ul>--}}
+    {{--@foreach($datasets as $dataset)--}}
+        {{--<li>{{$dataset->gender}}</li>--}}
+    {{--@endforeach--}}
+{{--</ul>--}}
