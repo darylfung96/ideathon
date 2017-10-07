@@ -103,30 +103,15 @@
                 <div class="col-sm-3 col-xs-6 right mh">
                     <div class="aligner">
                         <div class="holder">
-<<<<<<< HEAD
-<<<<<<< HEAD
+
                             <i class="ion-happy"></i>
-=======
-                            <i class="ion-android-happy"></i>
->>>>>>> master
-=======
-                            <i class="ion-happy"></i>
->>>>>>> daryl
                             <h5>Normal</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing
                                 elit.
                             </p>
                             <hr>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            <i class="ion-sad"></i>
-=======
-                            <i class="ion-android-sad"></i>
->>>>>>> master
-=======
                             <i class="ion-sad"></i>
 
->>>>>>> daryl
                             <h5>Kinda Normal</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing
                                 elit.
