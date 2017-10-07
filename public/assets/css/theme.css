@@ -94,6 +94,19 @@ $secondary: #224B7D; // Secondary for text hovers
 $shader: rgba(13, 20, 34, 0.9); // Used for shading on top of images and elements
 $navBg: rgba(13, 20, 34, 0.95); // Used for shading on top of images and elements
 ------------------------------------*/
+
+
+/* ----------------------------------
+   1. FORM STYLES
+---------------------------------- */
+
+.radio-buttons{
+    font: 300 15px/15px "Poppins", sans-serif;
+    margin-left: 5px;
+    margin-right: 15px;
+}
+
+
 /* ----------------------------------
    1. G L O B A L
 ---------------------------------- */
@@ -4275,81 +4288,81 @@ form textarea {
   border: 2px solid 1px solid #3B476E;
 }
 
-form.contact-form {
+form.my-form {
   margin-right: -15px;
   margin-left: -15px;
 }
-form.contact-form .input-field {
+form.my-form .input-field {
   margin-bottom: 15px;
 }
 @media (max-width: 767px) {
-  form.contact-form .input-field {
+  form.my-form .input-field {
     margin-bottom: 25px;
   }
 }
-form.contact-form input[type="text"],
-form.contact-form input[type="tel"],
-form.contact-form input[type="email"],
-form.contact-form input[type="password"],
-form.contact-form textarea {
+form.my-form input[type="text"],
+form.my-form input[type="tel"],
+form.my-form input[type="email"],
+form.my-form input[type="password"],
+form.my-form textarea {
   width: 100%;
   background: #F5F7F9;
   border-color: transparent;
   padding: 10px 15px 11px;
 }
-form.contact-form input[type="submit"] {
+form.my-form input[type="submit"] {
   border-color: #5BC0BE;
 }
 @media (max-width: 767px) {
-  form.contact-form input[type="submit"] {
+  form.my-form input[type="submit"] {
     min-width: 50%;
   }
 }
-form.contact-form textarea {
+form.my-form textarea {
   padding-top: 12px;
   padding-bottom: 12px;
 }
-form.contact-form .help-block ul li {
+form.my-form .help-block ul li {
   font-size: 12px;
   color: #EC4640;
 }
-form.contact-form .messages {
+form.my-form .messages {
   color: #5BC0BE;
   text-align: center;
   padding: 21px 0 0;
   font-weight: 700;
   display: block;
 }
-form.contact-form .messages button {
+form.my-form .messages button {
   display: none;
 }
 
-.dark1 form.contact-form input[type="text"],
-.dark1 form.contact-form input[type="tel"],
-.dark1 form.contact-form input[type="email"],
-.dark1 form.contact-form input[type="password"],
-.dark1 form.contact-form textarea,
-.dark3 form.contact-form input[type="text"],
-.dark3 form.contact-form input[type="tel"],
-.dark3 form.contact-form input[type="email"],
-.dark3 form.contact-form input[type="password"],
-.dark3 form.contact-form textarea {
+.dark1 form.my-form input[type="text"],
+.dark1 form.my-form input[type="tel"],
+.dark1 form.my-form input[type="email"],
+.dark1 form.my-form input[type="password"],
+.dark1 form.my-form textarea,
+.dark3 form.my-form input[type="text"],
+.dark3 form.my-form input[type="tel"],
+.dark3 form.my-form input[type="email"],
+.dark3 form.my-form input[type="password"],
+.dark3 form.my-form textarea {
   background: #1C2541;
 }
 
-.dark2 form.contact-form input[type="text"],
-.dark2 form.contact-form input[type="tel"],
-.dark2 form.contact-form input[type="email"],
-.dark2 form.contact-form input[type="password"],
-.dark2 form.contact-form textarea {
+.dark2 form.my-form input[type="text"],
+.dark2 form.my-form input[type="tel"],
+.dark2 form.my-form input[type="email"],
+.dark2 form.my-form input[type="password"],
+.dark2 form.my-form textarea {
   background: #2A3454;
 }
 
-.grey form.contact-form input[type="text"],
-.grey form.contact-form input[type="tel"],
-.grey form.contact-form input[type="email"],
-.grey form.contact-form input[type="password"],
-.grey form.contact-form textarea {
+.grey form.my-form input[type="text"],
+.grey form.my-form input[type="tel"],
+.grey form.my-form input[type="email"],
+.grey form.my-form input[type="password"],
+.grey form.my-form textarea {
   background: #fff;
 }
 

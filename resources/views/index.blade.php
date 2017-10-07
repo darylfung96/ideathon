@@ -25,6 +25,18 @@
     <!-- Theme CSS -->
     <link id="theme" rel="stylesheet" href={{asset("assets/css/theme.css")}}>
     <script src={{asset("assets/vendor/modernizr.js")}}></script>
+
+    <script>
+        function checkInp()
+        {
+            var x=document.forms["my-form"]["age"].value;
+            if (isNaN(x))
+            {
+                alert("Your age must be a number buddy >:(");
+                return false;
+            }
+        }
+    </script>
 </head>
 
 <body class="indexing">
@@ -72,9 +84,9 @@
                 <h5>Welcome to Ideathon</h5>
                 <h1>Hackathon Idea Generator</h1>
                 <h6></h6>
-                <p>Try it out :D</p>
+                <p>Try it out <i class="ion-happy-outline"></i></p>
             </div>
-            <img class="arrow" src="img/arrow.svg" alt="">
+            <img class="arrow" src={{asset("assets/img/arrow.svg")}} alt="">
         </div>
     </header>
 
@@ -91,13 +103,14 @@
                 <div class="col-sm-3 col-xs-6 right mh">
                     <div class="aligner">
                         <div class="holder">
-                            <i class="ion-gear-a"></i>
+                            <i class="ion-happy"></i>
                             <h5>Normal</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing
                                 elit.
                             </p>
                             <hr>
-                            <i class="ion-alert"></i>
+                            <i class="ion-sad"></i>
+
                             <h5>Kinda Normal</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing
                                 elit.
@@ -128,17 +141,19 @@
             </div>
         </div>
     </section>
+
     <section id="c_contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 title">
                     <h2>Tell us a little bit about yourself</h2>
-                    <h4>We want to get to know you inorder to give you the best possible idea :)</h4>
+                    <h4>We want to get to know you in order to give you the best possible idea <i class="ion-happy-outline"></i></h4>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <form class="contact-form" method="post" action="contact.php">
+                    <form class="my-form" name= "my-form" action="/submit" onsubmit="checkInp()" method="post">
+                        {{ csrf_field() }}
                         <div class="input-field col-sm-12">
                             <div class="form-group">
                                 <input id="form-name" name="name" type="text" placeholder="Your Name *" required="required"
@@ -146,29 +161,61 @@
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
+
                         <div class="input-field col-sm-6">
+                            <h4>What's your Gender?</h4>
                             <div class="form-group">
-                                <input id="form-email" name="email" type="email" placeholder="Email Address *" required="required"
-                                       data-error="Email is required.">
-                                <div class="help-block with-errors"></div>
+                                <input name="gender" type="radio" value="0" required><span class="radio-buttons">Male</span>
+                                <input name="gender" type="radio" value="1"><span class="radio-buttons">Female</span>
+                                <input name="gender" type="radio" value="2"><span class="radio-buttons">Other</span>
                             </div>
                         </div>
+
                         <div class="input-field col-sm-6">
+                            <h4>Are you hungry?</h4>
                             <div class="form-group">
-                                <input id="form-tel" name="tel" type="tel" placeholder="Phone Number" data-error="Please provide real phone number.">
-                                <div class="help-block with-errors"></div>
+                                <input name="hungry" type="radio" value="0" required><span class="radio-buttons">Hell Yeah</span>
+                                <input name="hungry" type="radio" value="1"><span class="radio-buttons">Not Really</span>
                             </div>
                         </div>
-                        <div class="input-field col-sm-12">
+
+                        <div class="input-field col-sm-6">
+                            <h4>Got any kids?</h4>
                             <div class="form-group">
-                                    <textarea id="form-textarea" name="Message" id="" cols="30" rows="5" placeholder="Your message here *"
-                                              required="required" data-error="Message is required."></textarea>
-                                <div class="help-block with-errors"></div>
+                                <input name="kids" type="radio" value="0" required><span class="radio-buttons">Yeah <i class="ion-sad-outline"></i></span>
+                                <input name="kids" type="radio" value="1" ><span class="radio-buttons">Nope <i class="ion-happy-outline"></i></span>
                             </div>
                         </div>
+
+                        <div class="input-field col-sm-6">
+                            <h4>Be Honest, Are you stupid?</h4>
+                            <div class="form-group">
+                                <input name="stupid" type="radio" value="0" required><span class="radio-buttons">Yeah <i class="ion-sad-outline"></i></span>
+                                <input name="stupid" type="radio" value="1" ><span class="radio-buttons">Nope <i class="ion-happy-outline"></i></span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="input-field col-sm-6">
+                            <h4>How weird are you?</h4>
+                            <div class="form-group">
+                                <input name="weird" type="radio" value="0" required><span class="radio-buttons">Not</span>
+                                <input name="weird" type="radio" value="1" ><span class="radio-buttons">Kinda</span>
+                                <input name="weird" type="radio" value="2" ><span class="radio-buttons">Weird Af</span>
+                            </div>
+                        </div>
+
+                        <div class="input-field col-sm-6">
+                            <h4>How old are you?</h4>
+                            <div class="form-group">
+                                <input name="age" type="text" placeholder="Bet you're old af" required="required">
+                            </div>
+                        </div>
+
+
                         <div class="col-sm-12 center">
-                            <input type="submit" value="Submit Form">
-                            <div class="messages"></div>
+                            <input type="submit">
                         </div>
                     </form>
                 </div>
@@ -177,35 +224,9 @@
     </section>
 
 
-    <footer id="smart">
-        <div class="container">
-            <div class="row foot-space">
-                <div class="col-md-4 col-sm-12">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Odio, consequatur facere molestiae iusto atque.
-                    </p>
-                    <div class="social">
-                        <a href="#"><i class="ion-social-twitter"></i></a>
-                        <a href="#"><i class="ion-social-googleplus"></i></a>
-                        <a href="#"><i class="ion-social-instagram-outline"></i></a>
-                        <a href="#"><i class="ion-social-linkedin-outline"></i></a>
-                        <a href="#"><i class="ion-social-pinterest-outline"></i></a>
-                        <a href="#"><i class="ion-social-github"></i></a>
-                    </div>
-                </div>
-                <div class="col-xs-12">
-                    <hr>
-                </div>
-                <div class="col-xs-12 xs-center">
-                    <p class="footer-text">Copyright &copy; Ideathon. All rights reservered.</p>
-
-                </div>
-            </div>
-        </div>
-    </footer>
-
 </div>
 <!-- end of web-in -->
+
 <script src={{asset("assets/vendor/jquery-2.2.1.min.js")}}></script>
 <script src={{asset("assets/vendor/matchHeight-min.js")}}></script>
 <script src={{asset("assets/vendor/contact/validator.js")}}></script>
