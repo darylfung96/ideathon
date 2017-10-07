@@ -91,13 +91,13 @@
                 <div class="col-sm-3 col-xs-6 right mh">
                     <div class="aligner">
                         <div class="holder">
-                            <i class="ion-gear-a"></i>
+                            <i class="ion-android-happy"></i>
                             <h5>Normal</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing
                                 elit.
                             </p>
                             <hr>
-                            <i class="ion-alert"></i>
+                            <i class="ion-android-sad"></i>
                             <h5>Kinda Normal</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing
                                 elit.
@@ -167,7 +167,7 @@
                             </div>
                         </div>
                         <div class="col-sm-12 center">
-                            <input type="submit" value="Submit Form">
+                            <input type="submit" value="SUBMIT">
                             <div class="messages"></div>
                         </div>
                     </form>
@@ -176,33 +176,6 @@
         </div>
     </section>
 
-
-    <footer id="smart">
-        <div class="container">
-            <div class="row foot-space">
-                <div class="col-md-4 col-sm-12">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Odio, consequatur facere molestiae iusto atque.
-                    </p>
-                    <div class="social">
-                        <a href="#"><i class="ion-social-twitter"></i></a>
-                        <a href="#"><i class="ion-social-googleplus"></i></a>
-                        <a href="#"><i class="ion-social-instagram-outline"></i></a>
-                        <a href="#"><i class="ion-social-linkedin-outline"></i></a>
-                        <a href="#"><i class="ion-social-pinterest-outline"></i></a>
-                        <a href="#"><i class="ion-social-github"></i></a>
-                    </div>
-                </div>
-                <div class="col-xs-12">
-                    <hr>
-                </div>
-                <div class="col-xs-12 xs-center">
-                    <p class="footer-text">Copyright &copy; Ideathon. All rights reservered.</p>
-
-                </div>
-            </div>
-        </div>
-    </footer>
 
 </div>
 <!-- end of web-in -->
