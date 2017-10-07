@@ -134,7 +134,7 @@
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 title">
                     <h2>Tell us a little bit about yourself</h2>
-                    <h4>We want to get to know you inorder to give you the best possible idea <i class="ion-happy-outline"></i></h4>
+                    <h4>We want to get to know you in order to give you the best possible idea <i class="ion-happy-outline"></i></h4>
                 </div>
             </div>
             <div class="row">
@@ -148,40 +148,53 @@
                             </div>
                         </div>
 
-                        <hr>
-
                         <div class="input-field col-sm-6">
                             <h4>What's your Gender?</h4>
                             <div class="form-group">
-                                <input name="gender" type="radio" value="Male" ><span class="radio-buttons">Male</span>
-                                <input name="gender" type="radio" value="Female" ><span class="radio-buttons">Female</span>
-                                <input name="gender" type="radio" value="Other" ><span class="radio-buttons">Other</span>
-                            </div>
-                        </div>
-
-                        <div class="input-field col-sm-6">
-                            <h4>Got any kids?</h4>
-                            <div class="form-group">
-                                <input name="kids" type="radio" value="Yes" ><span class="radio-buttons">Yeah <i class="ion-sad-outline"></i></span>
-                                <input name="kids" type="radio" value="No" ><span class="radio-buttons">Nope <i class="ion-happy-outline"></i></span>
-                            </div>
-                        </div>
-
-
-                        <div class="input-field col-sm-6">
-                            <h4>Got any kids?</h4>
-                            <div class="form-group">
-                                <input name="gender" type="radio" value="Male" ><span class="radio-buttons">Male</span>
-                                <input name="gender" type="radio" value="Female" ><span class="radio-buttons">Female</span>
-                                <input name="gender" type="radio" value="Other" ><span class="radio-buttons">Other</span>
+                                <input name="gender" type="radio" value="0" ><span class="radio-buttons">Male</span>
+                                <input name="gender" type="radio" value="1" ><span class="radio-buttons">Female</span>
+                                <input name="gender" type="radio" value="2" ><span class="radio-buttons">Other</span>
                             </div>
                         </div>
 
                         <div class="input-field col-sm-6">
                             <h4>Are you hungry?</h4>
                             <div class="form-group">
-                                <input name="hungry" type="radio" value="Yes" ><span class="radio-buttons">Hell Yeah</span>
-                                <input name="hungry" type="radio" value="No" ><span class="radio-buttons">Not Really</span>
+                                <input name="hungry" type="radio" value="0" ><span class="radio-buttons">Hell Yeah</span>
+                                <input name="hungry" type="radio" value="1" ><span class="radio-buttons">Not Really</span>
+                            </div>
+                        </div>
+
+                        <div class="input-field col-sm-6">
+                            <h4>Got any kids?</h4>
+                            <div class="form-group">
+                                <input name="kids" type="radio" value="0" ><span class="radio-buttons">Yeah <i class="ion-sad-outline"></i></span>
+                                <input name="kids" type="radio" value="1" ><span class="radio-buttons">Nope <i class="ion-happy-outline"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="input-field col-sm-6">
+                            <h4>Be Honest, Are you stupid?</h4>
+                            <div class="form-group">
+                                <input name="stupid" type="radio" value="0" ><span class="radio-buttons">Yeah <i class="ion-sad-outline"></i></span>
+                                <input name="stupid" type="radio" value="1" ><span class="radio-buttons">Nope <i class="ion-happy-outline"></i></span>
+                            </div>
+                        </div>
+
+
+                        <div class="input-field col-sm-6">
+                            <h4>How weird are you?</h4>
+                            <div class="form-group">
+                                <input name="weird" type="radio" value="0" ><span class="radio-buttons">Not</span>
+                                <input name="weird" type="radio" value="1" ><span class="radio-buttons">Kinda</span>
+                                <input name="weird" type="radio" value="2" ><span class="radio-buttons">Weird Af</span>
+                            </div>
+                        </div>
+
+                        <div class="input-field col-sm-6">
+                            <h4>How old are you?</h4>
+                            <div class="form-group">
+                                <input name="age" type="text" placeholder="Bet you're old af" required="required">
                             </div>
                         </div>
 
