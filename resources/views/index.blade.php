@@ -103,13 +103,21 @@
                 <div class="col-sm-3 col-xs-6 right mh">
                     <div class="aligner">
                         <div class="holder">
+<<<<<<< HEAD
                             <i class="ion-happy"></i>
+=======
+                            <i class="ion-android-happy"></i>
+>>>>>>> master
                             <h5>Normal</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing
                                 elit.
                             </p>
                             <hr>
+<<<<<<< HEAD
                             <i class="ion-sad"></i>
+=======
+                            <i class="ion-android-sad"></i>
+>>>>>>> master
                             <h5>Kinda Normal</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing
                                 elit.
@@ -192,6 +200,7 @@
                                 <input name="stupid" type="radio" value="0" required><span class="radio-buttons">Yeah <i class="ion-sad-outline"></i></span>
                                 <input name="stupid" type="radio" value="1" ><span class="radio-buttons">Nope <i class="ion-happy-outline"></i></span>
                             </div>
+
                         </div>
 
 
@@ -220,6 +229,7 @@
             </div>
         </div>
     </section>
+
 
 </div>
 <!-- end of web-in -->
