@@ -3,12 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Phpml\Classification\SVC;
 use Phpml\ModelManager;
+use Phpml\SupportVectorMachine\Kernel;
 
 
 class IdeaController extends Controller
 {
+    private $classifer;
+
     public function generate_idea(Request $request){
 
         $gender = $request->gender;
@@ -18,6 +22,17 @@ class IdeaController extends Controller
         $weird = $request->weird;
         $age = $request->age;
 
+        $this->trainDataSet();
+        $value = $this->predictDataSet($gender, $hungry, $kids, $stupid, $weird, $age);
+        $value = $this->getCategory($value);
+        echo $value;
+
+    }
+
+    public function predictDataSet($gender, $hungry, $kids, $stupid, $weird, $age) {
+        $sample = array();
+        array_push($sample, $gender, $hungry, $kids, $stupid, $weird, $age);
+        return $this->classifer->predict($sample);
     }
 
     //
@@ -42,15 +57,36 @@ class IdeaController extends Controller
         }
 
 
-        $classifier = new SVC();
-        $classifier->train($samples, $categories);
+        $this->classifer = new SVC();
+        $this->classifer->train($samples, $categories);
+
 
         // save classifier
-        $filepath = '/model/SVC';
+        $filepath = 'model/SVC/svc.model';
+
+
         $modelSaver = new ModelManager();
-        $modelSaver->saveToFile($classifier, $filepath);
-
-
-        return view('testing/testing', compact('samples', 'categories'));
+        $modelSaver->saveToFile($this->classifer, $filepath);
     }
+
+
+    private function getCategory($number) {
+        switch($number) {
+            case 0:
+                return 'Normal';
+                break;
+            case 1:
+                return 'Kinda Normal';
+                break;
+            case 2:
+                return 'Crazy';
+                break;
+            case 3:
+                return 'Batshit Crazy';
+                break;
+            default:
+                return 'Unknown';
+        }
+    }
+
 }
