@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\URL;
 use Phpml\Classification\SVC;
 use Phpml\ModelManager;
 use Phpml\SupportVectorMachine\Kernel;
@@ -25,8 +27,13 @@ class IdeaController extends Controller
         $this->trainDataSet();
         $value = $this->predictDataSet($gender, $hungry, $kids, $stupid, $weird, $age);
         $value = $this->getCategory($value);
-        echo $value;
+        return view('results', compact('value'));
+//        return \redirect('/result')->with('value', $value);
+    }
 
+    public function redirect_idea(Request $request) {
+        //return view('/hello');
+        return view('results', compact('value', $request));
     }
 
     public function predictDataSet($gender, $hungry, $kids, $stupid, $weird, $age) {
