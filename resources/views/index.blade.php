@@ -103,6 +103,10 @@
                 <div class="col-sm-3 col-xs-6 right mh">
                     <div class="aligner">
                         <div class="holder">
+<<<<<<< HEAD
+=======
+
+>>>>>>> 25282eae0f406a3f56e3cb4ad1962040568bd00d
                             <i class="ion-happy"></i>
                             <h5>Normal</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing
