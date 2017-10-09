@@ -18,5 +18,8 @@ Route::get('/', function () {
 
 Route::get('/train', 'IdeaController@trainDataSet');
 Route::post('/submit', 'IdeaController@generate_idea');
-//Route::post('/result', 'IdeaController@redirect_idea');
+
+Route::get('/result/{type}', function (){
+    return view('results');
+});
 

@@ -106,6 +106,9 @@ $navBg: rgba(13, 20, 34, 0.95); // Used for shading on top of images and element
     margin-right: 15px;
 }
 
+.results-image{
+    width: 60%;
+}
 
 /* ----------------------------------
    1. G L O B A L

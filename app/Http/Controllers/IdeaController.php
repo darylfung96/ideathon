@@ -27,8 +27,7 @@ class IdeaController extends Controller
         $this->trainDataSet();
         $value = $this->predictDataSet($gender, $hungry, $kids, $stupid, $weird, $age);
         $value = $this->getCategory($value);
-        return view('results', compact('value'));
-//        return \redirect('/result')->with('value', $value);
+        return redirect('/result/' . $value)->with('value', $value);
     }
 
     public function redirect_idea(Request $request) {

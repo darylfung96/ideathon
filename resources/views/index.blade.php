@@ -119,7 +119,7 @@
                     </div>
                 </div>
                 <div class="col-sm-6 center phones mh hidden-xs">
-                    <img class="behind" style="width: 80%" src={{asset("assets/img/trump.png")}} alt="">
+                    <img class="behind" style="width: 80%" src={{asset("assets/img/batshit-crazy.png")}} alt="">
                 </div>
                 <div class="col-sm-3 col-xs-6 mh">
                     <div class="aligner">
