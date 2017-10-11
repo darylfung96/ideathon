@@ -5,7 +5,7 @@
     <!-- Basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ideathon | Hackathon Idae Generator </title>
+    <title>Ideathon | Looks Like you're {{session()->get('value')}} </title>
     <meta name="description" content="Arisn - Multi Purpose HTML5 Template">
     <meta name="author" content="premonday.com">
     <!-- Fonts -->
@@ -49,34 +49,6 @@
 <!-- Main Container -->
 <div class="web-in">
 
-    <!-- Start Project Modal -->
-    <div id="modal-bg">
-        <img src={{asset("assets/img/exit.svg")}} class="exit" alt="">
-        <div class="holder">
-            <div class="placer">
-                <div id="modal" class="center">
-                    <div class="title">
-                        <h5>Download Arisn</h5>
-                        <span class="promo-heading">You've made the right choice</span>
-                        <hr>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12 w-section"><i class="ion-ios-star-outline"></i>
-                            <h3>A download link will appear here soon.</h3>
-                            <p>Thank you for your patience.
-                            </p>
-                        </div>
-                    </div>
-                    <hr>
-                    <a href="#" class="btn"><span>Place for link</span></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
     <!-- Header -->
     <header id="sp1" class="center dark1" style="height:570px; background-image:url(img/fp-img.png)">
         <div class="header-in">
@@ -86,19 +58,19 @@
 
                     switch(session()->get('value')) {
                         case 'Normal':
-                            echo "<i class='ion-happy'></i>";
+                            echo " <i class='ion-happy'></i>";
                             break;
                         case 'Kinda Normal':
-                            echo "<i class='ion-sad'></i>";
+                            echo " <i class='ion-sad'></i>";
                             break;
                         case 'Crazy':
-                            echo "<i class='ion-alert'></i>";
+                            echo " <i class='ion-alert'></i>";
                             break;
                         case 'Batshit Crazy':
-                            echo "<i class='ion-alert-circled'></i>";
+                            echo " <i class='ion-alert-circled'></i>";
                             break;
                         default:
-                            echo "<i class='ion-happy'></i>";
+                            echo " <i class='ion-happy'></i>";
                     }
                     ?>
                 </h5>

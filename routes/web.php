@@ -19,7 +19,7 @@ Route::get('/', function () {
 Route::get('/train', 'IdeaController@trainDataSet');
 Route::post('/submit', 'IdeaController@generate_idea');
 
-Route::get('/result/{type}', function (){
+Route::get('/result/', function (){
     return view('results');
 });
 
