@@ -58,41 +58,27 @@
 
                     switch(session()->get('value')) {
                         case 'Normal':
-                            echo " <i class='ion-happy'></i>";
+                            echo " <i class='ion-happy'></i> </h5>
+                                    <img style='width:30%' src=".asset('assets/img/normal.png')." />";
                             break;
                         case 'Kinda Normal':
-                            echo " <i class='ion-sad'></i>";
+                            echo " <i class='ion-sad'></i> </h5>
+                                    <img style='width:30%' src=".asset('assets/img/kinda-normal.png')." />";
                             break;
                         case 'Crazy':
-                            echo " <i class='ion-alert'></i>";
+                            echo " <i class='ion-alert'></i> </h5>
+                                    <img style='width:30%' src=".asset('assets/img/crazy.png')." />";
                             break;
                         case 'Batshit Crazy':
-                            echo " <i class='ion-alert-circled'></i>";
+                            echo " <i class='ion-alert-circled'></i> </h5>
+                                    <img style='width:30%' src=".asset('assets/img/batshit-crazy.png')." />";
                             break;
                         default:
-                            echo " <i class='ion-happy'></i>";
+                            echo " <i class='ion-happy'></i> </h5>
+                                    <img style='width:30%' src=".asset('assets/img/batshit-crazy.png')." />";
                     }
                     ?>
-                </h5>
-                <?php
 
-                switch(session()->get('value')) {
-                    case 'Normal':
-                        echo "<img style='width:30%' src=".asset('assets/img/normal.png')." />";
-                        break;
-                    case 'Kinda Normal':
-                        echo "<img style='width:30%' src=".asset('assets/img/kinda-normal.png')." />";
-                        break;
-                    case 'Crazy':
-                        echo "<img style='width:30%' src=".asset('assets/img/crazy.png')." />";
-                        break;
-                    case 'Batshit Crazy':
-                        echo "<img style='width:30%' src=".asset('assets/img/batshit-crazy.png')." />";
-                        break;
-                    default:
-                        echo "<img style='width:30%' src=".asset('assets/img/batshit-crazy.png')." />";
-                }
-                ?>
                 <h5>Now that we know you, we can give you an idea that is just right for you.</h5>
                 <h1> - IDEA_GOES_HERE - </h1>
             </div>
