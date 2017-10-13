@@ -92,4 +92,51 @@ class IdeaController extends Controller
         }
     }
 
+
+    /*  Add to database
+     *
+     *  BATSHIT CRAZY:
+     *          - Create an AI that helps you code
+     *          - Create a game with a map based on the whole Winnipeg area
+     *          - Create an operating system from scratch
+     *          - Create an app that finds people's social media just by looking at their face
+     *          - Create an app that can predict your future wife
+     *          - Create an augmented reality game
+     *
+     *
+     *  CRAZY:
+     *          - Create a clone of Winnipeg Transit App from scratch without their API
+     *          - Create an agent that can detect if you are male or female just by looking at your face
+     *
+     *  KINDA NORMAL:
+     *          - Create a flappy bird game
+     *          - Create a website that people can see each other hand
+     *          - Create a cross platform app that tells you what to do everyday
+     *          -
+     *
+     *  NORMAL:
+     *          - Create a text file
+     *          - Generate a character
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     * */
+
+    private function randomProjectIdeas($number) {
+        switch($number) {
+            case 0:
+        }
+    }
+
 }
